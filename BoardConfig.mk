@@ -20,21 +20,14 @@
 # definition file).
 #
 
-# Inherit from common serrano
--include device/samsung/serrano-common/BoardConfigCommon.mk
-
 # Assert
 TARGET_OTA_ASSERT_DEVICE := serranods,serranodsdd,serranodsub,serranodsxx,GT-I9192
 
-# Kernel
-TARGET_KERNEL_VARIANT_CONFIG := msm8930_serrano_eur_3g_defconfig
+DEVICE_PATH := device/samsung/serranodsdd
 
-# Radio/Ril class for i9192
-BOARD_RIL_CLASS := ../../../device/samsung/serranodsdd/ril
-COMMON_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/serranodsdd/include
 
-# BLN
-BOARD_HAVE_GENERIC_BLN := true
+# A new experiment..
+include device/samsung/serranodsdd/board/*.mk
 
-# Disable Block Based OTA
-BLOCK_BASED_OTA=false
+-include vendor/samsung/serranodsdd/BoardConfigVendor.mk

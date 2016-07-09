@@ -13,20 +13,21 @@
 # limitations under the License.
 #
 
-# Inherit from serrano-common
-$(call inherit-product, device/samsung/serrano-common/serrano-common.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/serranodsdd/overlay
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+# Boot animation
+TARGET_SCREEN_HEIGHT := 960
+TARGET_SCREEN_WIDTH := 540
 
-# Ramdisk
-PRODUCT_COPY_FILES += \
-    device/samsung/serranodsdd/init.carrier.rc:root/init.carrier.rc \
-    device/samsung/serranodsdd/init.class_main.sh:root/init.class_main.sh
+# Product make files
+include device/samsung/serranodsdd/product/*.mk
+
+# Call the proprietary setup
+$(call inherit-product-if-exists, vendor/samsung/serranodsdd/serrano-common-vendor.mk)
 
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += \
@@ -34,7 +35,3 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.adb.secure=0 \
     ro.debuggable=1 \
     persist.service.adb.enable=1
-
-# Stlport
-PRODUCT_PACKAGES += \
-    libstlport
