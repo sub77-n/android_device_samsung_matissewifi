@@ -33,9 +33,6 @@ ifeq ($(TARGET_BOARD_PLATFORM),msm8960)
 ifneq ($(filter serrano3gxx serranodsdd serranodsub serranoltebmc \
                 serranoltespr serranolteusc serranoltexx,$(TARGET_DEVICE)),)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
-endif
-endif
-endif
 
 MODEM_IMAGES := \
     modem.b00 modem.b01 modem.b02 modem.b03 modem.b04 modem.b05 \
