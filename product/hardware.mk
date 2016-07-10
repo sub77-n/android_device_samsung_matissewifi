@@ -28,7 +28,3 @@ PRODUCT_PACKAGES += \
 # Stlport
 PRODUCT_PACKAGES += \
     libstlport
-    
-# Camera Wrapper
-PRODUCT_PACKAGES += \
-    camera.msm8960
