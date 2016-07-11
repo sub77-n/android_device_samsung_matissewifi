@@ -26,5 +26,5 @@ PRODUCT_PACKAGES += \
     consumerir.msm8960
     
 # Stlport
-PRODUCT_PACKAGES += \
-    libstlport
+#PRODUCT_PACKAGES += \
+#    libstlport
