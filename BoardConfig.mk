@@ -21,13 +21,13 @@
 #
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := serranods,serranodsdd,serranodsub,serranodsxx,GT-I9192
+TARGET_OTA_ASSERT_DEVICE := matissewifi,SM-T530
 
-DEVICE_PATH := device/samsung/serranodsdd
+DEVICE_PATH := device/samsung/matissewifi
 
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/serranodsdd/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/matissewifi/include
 
 # A new experiment..
-include device/samsung/serranodsdd/board/*.mk
+include device/samsung/matissewifi/board/*.mk
 
--include vendor/samsung/serranodsdd/BoardConfigVendor.mk
+-include vendor/samsung/matissewifi/BoardConfigVendor.mk

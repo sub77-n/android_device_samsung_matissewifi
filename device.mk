@@ -20,14 +20,14 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 960
-TARGET_SCREEN_WIDTH := 540
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 1280
 
 # Product make files
-include device/samsung/serranodsdd/product/*.mk
+include device/samsung/matissewifi/product/*.mk
 
 # Call the proprietary setup
-$(call inherit-product-if-exists, vendor/samsung/serranodsdd/serrano-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/matisse/matisse-common-vendor.mk)
 
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += \

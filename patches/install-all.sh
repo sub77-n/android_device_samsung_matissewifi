@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cd device/samsung/serranodsdd/patches/
+cd device/samsung/matissewifi/patches/
 
 ./apply/install-common.sh

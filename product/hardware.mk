@@ -1,15 +1,15 @@
 # GPS/location security configuration file
 PRODUCT_COPY_FILES += \
-    device/samsung/serranodsdd/configs/sec_config:system/etc/sec_config
+    device/samsung/matissewifi/configs/sec_config:system/etc/sec_config
 
 # GPS config
 PRODUCT_COPY_FILES += \
-    device/samsung/serranodsdd/configs/gps.conf:system/etc/gps.conf \
-    device/samsung/serranodsdd/configs/sap.conf:system/etc/sap.conf
+    device/samsung/matissewifi/configs/gps.conf:system/etc/gps.conf \
+    device/samsung/matissewifi/configs/sap.conf:system/etc/sap.conf
 
 # GPS HAL
 PRODUCT_PACKAGES += \
-    gps.msm8960
+    gps.msm8226
 
 # FM radio
 PRODUCT_PACKAGES += \
@@ -19,11 +19,11 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8960
+    lights.msm8226
 
 # IR package
 PRODUCT_PACKAGES += \
-    consumerir.msm8960
+    consumerir.msm8226
     
 # Stlport
 #PRODUCT_PACKAGES += \

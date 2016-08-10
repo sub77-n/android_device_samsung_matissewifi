@@ -19,14 +19,14 @@
 PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-$(call inherit-product, device/samsung/serranodsdd/device.mk)
+$(call inherit-product, device/samsung/matissewifi/device.mk)
 
 # Set parameters
-PRODUCT_DEVICE := serranodsdd
-PRODUCT_NAME := aosp_serranodsdd
+PRODUCT_DEVICE := matissewifi
+PRODUCT_NAME := aosp_matissewifi
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := GT-I9192
+PRODUCT_MODEL := SM-T530
 
 # Set build fingerprint / ID / Product Name etc.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=serranodsxx TARGET_DEVICE=serranods BUILD_FINGERPRINT="samsung/serranodsxx/serranods:4.4.2/KOT49H/I9192XXUCNG2:user/release-keys" PRIVATE_BUILD_DESC="serranodsxx-user 4.4.2 KOT49H I9192XXUCNG2 release-keys"

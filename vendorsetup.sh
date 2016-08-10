@@ -1,3 +1,3 @@
-add_lunch_combo aosp_serranodsdd-eng
-add_lunch_combo aosp_serranodsdd-userdebug
-add_lunch_combo aosp_serranodsdd-user
+add_lunch_combo aosp_matissewifi-eng
+add_lunch_combo aosp_matissewifi-userdebug
+add_lunch_combo aosp_matissewifi-user

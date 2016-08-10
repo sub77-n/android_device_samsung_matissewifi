@@ -78,7 +78,7 @@ import java.util.Random;
 
 
 /**
- * RIL customization for SAMSUNG GALAXY S4 MINI DUOS GT-I9192 devices
+ * RIL customization for SAMSUNG GALAXY S4 MINI DUOS SM-T530 devices
  *
  * {@hide}
  */
