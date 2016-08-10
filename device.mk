@@ -27,7 +27,7 @@ TARGET_SCREEN_WIDTH := 1280
 include device/samsung/matissewifi/product/*.mk
 
 # Call the proprietary setup
-$(call inherit-product-if-exists, vendor/samsung/matisse/matisse-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/matissewifi/matissewifi-vendor.mk)
 
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += \
